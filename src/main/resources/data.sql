@@ -9,3 +9,6 @@ CREATE TABLE employees (
 INSERT INTO employees (id, name, dept) VALUES
   ('1', 'Debojit', 'IT'),
   ('2', 'Gobindo', 'IT');
+  ('3', 'ABC', 'IT');
+  ('4', 'DEF', 'IT');
+  ('5', 'GHI', 'IT');
