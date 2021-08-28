@@ -8,11 +8,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh './mvnw clean package'
+                sh './mvn clean package'
             }
             
             stage('deploy') {
-            sh ./mvnw spring-boot:run 
+            sh ./mvn spring-boot:run 
         }
     }
 }
