@@ -1,10 +1,6 @@
 pipeline {
     agent any
     
-    triggers {
-        pollSCM '* * * * *'
-    }
-    
     stages {
         stage('build') {
             steps {
@@ -14,7 +10,6 @@ pipeline {
 		}
 		stage('deploy') {
             steps {
-            	export MAVEN_OPTS=-Xmx1024m
                 sh 'spring-boot:run'
             }            
             
