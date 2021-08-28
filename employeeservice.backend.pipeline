@@ -12,5 +12,12 @@ pipeline {
             }            
             
 		}
+		stage('deploy') {
+            steps {
+            	export MAVEN_OPTS=-Xmx1024m
+                sh 'spring-boot:run'
+            }            
+            
+		}
 	}	
 }
